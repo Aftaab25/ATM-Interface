@@ -13,11 +13,6 @@ public class Account {
 	private String uuid;
 	
 	/**
-	 * The User object that owns this account.
-	 */
-	private User holder;
-	
-	/**
 	 * The list of transactions for this account.
 	 */
 	private ArrayList<Transaction> transactions;
@@ -29,8 +24,6 @@ public class Account {
 		
 		// set the account name and holder
 		this.name = name;
-		this.holder = holder;
-		
 		// get next account UUID
 		this.uuid = bank_.getNewAccountUUID();
 		

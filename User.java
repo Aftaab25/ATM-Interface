@@ -9,11 +9,6 @@ public class User {
 	private String firstName;
 	
 	/**
-	 * The last name of the user.
-	 */
-	private String lastName;
-	
-	/**
 	 * The ID number of the user.
 	 */
 	private String uuid;
@@ -39,8 +34,6 @@ public class User {
 		
 		// set user's name
 		this.firstName = firstName;
-		this.lastName = lastName;
-		
 		// store the pin's MD5 hash, instead of original value for security reasons
 		try {
 			MessageDigest md = MessageDigest.getInstance("MD5");

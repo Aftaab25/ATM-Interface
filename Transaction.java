@@ -18,17 +18,11 @@ public class Transaction {
 	private String memo;
 	
 	/**
-	 * The account in which the transaction was performed.
-	 */
-	private Account inAccount;
-	
-	/**
 	 * Create a new transaction.
 	 */
 	public Transaction(double amount, Account inAccount) {
 		
 		this.amount = amount;
-		this.inAccount = inAccount;
 		this.timestamp = new Date();
 		this.memo = "";
 		
